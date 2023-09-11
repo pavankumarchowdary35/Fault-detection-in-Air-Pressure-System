@@ -1,0 +1,4 @@
+pymongo==4.2.0
+pandas
+numpy
+-e .   ## equivalent to find packages, it triggers setup.py file
