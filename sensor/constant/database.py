@@ -1,0 +1,2 @@
+DATABASE_NAME = "Ineuron"
+COLLECTION_NAME = "sensor"
