@@ -1,6 +1,7 @@
 from sensor.configuration.mongo_db_connection import MongoDBClient
 from sensor.entity.config_entity import TrainingPipelineConfig, DataIngestionConfig
 from sensor.components.data_ingestion import DataIngestion
+from sensor.components.data_validation import DataValidation
 from sensor.pipeline.training_pipeline import TrainPipeline
 
 
