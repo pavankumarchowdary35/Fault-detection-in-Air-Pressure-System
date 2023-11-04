@@ -24,7 +24,7 @@ class DataValidation:
         Validates if all columns are present in data
         """
         try:
-            number_of_columns = len(self._schema_config['columns']) + 7
+            number_of_columns = len(self._schema_config['columns']) 
             if len(dataframe.columns)==number_of_columns:
                 return True
             logging.info(f"number of columns in schema: {number_of_columns}")
