@@ -20,7 +20,7 @@ class TrainPipeline:
     is_pipeline_running=False
     def __init__(self):
         self.training_pipeline_config = TrainingPipelineConfig()
-        #self.s3_sync = S3Sync()
+        self.s3_sync = S3Sync()
         
     def start_data_ingestion(self)->DataIngestionArtifact:
         try:
@@ -120,6 +120,6 @@ class TrainPipeline:
             self.sync_artifact_dir_to_s3()
             self.sync_saved_model_dir_to_s3()
         except  Exception as e:
-            #self.sync_artifact_dir_to_s3()
-            #TrainPipeline.is_pipeline_running=False
+            self.sync_artifact_dir_to_s3()
+            TrainPipeline.is_pipeline_running=False
             raise  SensorException(e,sys)
