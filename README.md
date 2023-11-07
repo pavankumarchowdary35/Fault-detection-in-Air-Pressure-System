@@ -6,7 +6,8 @@
 The Air Pressure System (APS) is a critical component of a heavy-duty vehicle that 
 uses compressed air to force a piston to provide pressure to the brake pads, slowing 
 the vehicle down. The benefits of using an APS instead of a hydraulic system are the 
-easy availability and long-term sustainability of natural air.  
+easy availability and long-term sustainability of natural air.
+
 This is a Binary Classification problem, in which the affirmative class indicates that the 
 failure was caused by a certain component of the APS, while the negative class 
 indicates that the failure was caused by something else.
@@ -35,9 +36,13 @@ Before we run the project, make sure that you are having MongoDB in your local s
 
 
 
-## Deployment Archietecture
-![image](https://user-images.githubusercontent.com/57321948/193536973-4530fe7d-5509-4609-bfd2-cd702fc82423.png)
-
+## Deployment steps 
+1. Build the Docker Image of the source code
+2. Push the Docker image to ECR (Elastic container Registry)
+3. Launch EC2 (Ubuntu virtual Machine)
+4. Pull the Docker Image from ECR into EC2
+5. Launch the Docker Image in EC2
+Git-Hub actions is used for continuous Integration, continuous deployment.
 
 ### Step 1: Clone the repository
 ```bash
