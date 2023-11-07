@@ -1,6 +1,6 @@
-# Sensor-Fault-Detection
+# Fault Detection in Air Pressure System
 
-![Truck gif](https://i.pinimg.com/originals/c6/c7/32/c6c7322df1086fd6b8b3a488c9107ee7)
+![Truck gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTdoMHV5OG4yOHp5NXYwdnFkY2thYmE1Mmo2dm5ibzJoOGMwZzd0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uPQoNeBTTJXXPvRveK/giphy.gif)
 
 ### Problem Statement
 The Air Pressure System (APS) is a critical component of a heavy-duty vehicle that 
@@ -31,7 +31,8 @@ The problem is to reduce the cost due to unnecessary repairs. So it is required 
 Before we run the project, make sure that you are having MongoDB in your local system, with Compass since we are using MongoDB for data storage. You also need AWS account to access the service like S3, ECR and EC2 instances.
 
 ## Project Archietecture
-![image](https://user-images.githubusercontent.com/57321948/193536768-ae704adc-32d9-4c6c-b234-79c152f756c5.png)
+![0_Sensor Training Pipeline (1)](https://github.com/pavankumarchowdary35/Fault-detection-in-Air-Pressure-System/assets/67354434/04b1cb6a-3aed-410f-93d9-bdc5040317a3)
+
 
 
 ## Deployment Archietecture
